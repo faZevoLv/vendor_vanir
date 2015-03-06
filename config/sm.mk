@@ -164,8 +164,3 @@ endif
   else
     OPT3:=
   endif
-else
-  $(warning ********************************************************************************)
-  $(warning *  SaberMod currently only works on linux host systems.)
-  $(warning ********************************************************************************)
-endif
