@@ -249,5 +249,10 @@ TARGET_ARCH := arm
 endif
 include vendor/vanir/config/sm.mk
 
+ # Chromium Prebuilt
+ ifeq ($(PRODUCT_PREBUILT_WEBVIEWCHROMIUM),yes)
+ -include prebuilts/chromium/$(TARGET_DEVICE)/chromium_prebuilt.mk
+ endif
+
 $(call inherit-product-if-exists, vendor/vanir-private/Private.mk)
 $(call inherit-product-if-exists, vendor/extra/product.mk)
